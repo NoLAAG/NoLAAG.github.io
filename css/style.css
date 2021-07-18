@@ -7,6 +7,11 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+
+article{
+	display: block;
+	width: 10%;
+}
 .wave{
 	position: fixed;
 	height: 100%;
@@ -24,10 +29,89 @@ body{
 	padding: 0 2rem;
 }
 
+
+.contain{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 7rem;
+	padding: 0;
+	width: 100%;
+}
+
+.contain img{
+	position:relative;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	width: 1902px;
+}
+.contain ul{
+	position: absolute;
+	top:0%;
+	left:82%;
+	padding: 1.7rem 0;
+	letter-spacing: 2px;
+
+}
+
+.contain h2{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	position: absolute;
+	top:30%;
+	left:50%;
+	color: #fff;
+	padding: 1.7rem 1.2rem;
+	font-size: 5rem;
+	margin-left: 100px;
+}
+
+header nav{
+	top:0;
+	left:0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	z-index:100000;
+}
+
+header.sticky{
+	overflow: hidden;
+	background-color: #333;
+}
+
+.contain p{	
+	display: grid;
+	grid-template-columns: 70% 50%;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	color: #fff;
+	padding: 1.7rem 1.2rem;
+	font-size: 14px;
+	margin-left: 110px;
+}
+
+.link-contact{
+	position: absolute;
+	top:52%;
+	left:70%;
+	color: #333;
+	padding: 1.7rem 1.2rem;
+	font-size: 2.8rem;
+}
+
 .img{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+}
+
+.img-main{
+	width: 100%;
 }
 
 .img img{
@@ -52,7 +136,7 @@ form h2{
 	font-size: 2.9rem;
 	text-transform: uppercase;
 	margin:15px 0;
-	color: #333;
+	color: #fff;
 }
 
 
@@ -152,7 +236,7 @@ a{
 	text-decoration: none;
 	color: #999;
 	font-size: 0.9rem;
-	transition: .3s;
+	transition: .3s;	
 }
 
 a:hover{
@@ -185,6 +269,53 @@ a:hover{
 	background-position: right;
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  li {
+	float: right;
+  }
+  
+  li a {
+	margin: 1rem 0;
+	font-size: 1.2rem;
+	display: block;
+	text-align: center;
+	padding: 10px 40px;
+	text-decoration: none;
+  }
+  
+
+.register{
+	border:solid 2px #333;
+	border-radius: 25px;
+	color: #333;
+}
+
+.register:hover{
+	border:solid 2px #fff;
+	border-radius: 25px;
+	color: #fff;
+}
+
+.login{
+	border:solid 2px #fff;
+	background-color: #fff;
+	border-radius: 25px;
+	color: #333;
+}
+
+.login:hover{
+	border:solid 2px black;
+	background-color:white;
+	color: black;
+}
+
+
+  
 
 
 @media screen and (max-width: 2000px){
@@ -233,12 +364,19 @@ a:hover{
 	.login-container{
 		justify-content: center;
 	}
+
+	li {
+		float: initial;
+	  }
+
+	  li a {
+		padding: 14px 16px;
+	  }
 }
 
 
-.error{
-	color:red;
-}
+
+
 
 @media screen and (min-width: 2500px){
 	form{
