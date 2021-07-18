@@ -349,6 +349,31 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBsUuk4JdcSAt4bJePTUjDHCMNmQH4gIVM",
+    authDomain: "nolaag-3b1be.firebaseapp.com",
+    databaseURL: "https://nolaag-3b1be-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "nolaag-3b1be",
+    storageBucket: "nolaag-3b1be.appspot.com",
+    messagingSenderId: "404989294949",
+    appId: "1:404989294949:web:395185f025154fe2f0498c",
+    measurementId: "G-QG218K18YP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 </body>
 
 </html>
