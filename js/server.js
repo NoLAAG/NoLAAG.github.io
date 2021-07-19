@@ -5,6 +5,8 @@ const bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({extended: true}));
 
+mongoose.connect("mongodb+srv://root:root@cluster0.eaaq1.mongodb.net/nolaag");
+
 app.get("/", function(req, res){
     res.send("express is working")
 })
