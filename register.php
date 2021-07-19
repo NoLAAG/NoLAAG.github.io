@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost","root","","website");
+$con = mysqli_connect("https://nolaag.me/","root","","nolaag");
 
 $name= $_POST['T1'];
 $username= $_POST['T2'];
