@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("https://nolaag.me/","root","","nolaag");
+$con = mysqli_connect("mysql-waeyahiaoui.alwaysdata.net","239893_admin","Waelezio20!","waeyahiaoui_web");
 
 $name= $_POST['T1'];
 $username= $_POST['T2'];
