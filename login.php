@@ -15,6 +15,7 @@ if(mysqli_num_rows($res) == 0){
 }
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +23,10 @@ if(mysqli_num_rows($res) == 0){
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+
 </head>
+
 <body>
 	
 	<img class="wave" src="img/wave.png">
@@ -31,10 +35,9 @@ if(mysqli_num_rows($res) == 0){
 			<img src="img/img.svg">
 		</div>
 		<div class=login-container>
-			<form>
+			<form action="soon.html">
 				<img class="avatar" src= "img/avatar.svg">
 				<h2>LOGIN</h2>
-				<h3><?php echo "<span style='color:red'>$error</span>"; ?></h3>
 				<div class="input-div one">
 					<div class="i">
 						<i class="fa fa-user " ></i>
@@ -56,11 +59,12 @@ if(mysqli_num_rows($res) == 0){
 					<a class="a" href="register.html">I don't have account yet</a>
 					<a href="#">Forget Password?</a>
 				<input type="submit" name="B1" class="btn" value="login">
+				
+				<a href="index.html">Back to home screen.</a>
 			</form>
 		</div>
 	</div>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/server.js"></script>
-	
 </body>
 </html>
